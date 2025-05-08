@@ -34,6 +34,11 @@ docker build -t hwp2docx-linux .
 docker run --rm -v "$(pwd)":/data sushikim/hwp2docx:latest input.hwp output.docx
 
 ```
+for x86-64 users
+```bash
+docker pull sushikim/hwp2docx:amd64
+docker run --rm -v "$(pwd)":/data sushikim/hwp2docx:amd64 input.hwp output.docx
+```
 
 ### Native Linux (Ubuntu/Debian)
 
