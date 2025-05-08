@@ -28,10 +28,11 @@ brew install hwp2docx
 ### Docker
 
 ```bash
-docker pull gcr.io/hwp2docx-linux/hwp2docx:latest
+docker pull sushikim/hwp2docx:latest
 # or build locally
 docker build -t hwp2docx-linux .
-docker run --rm -v "$(pwd)":/data hwp2docx-linux input.hwp output.docx
+docker run --rm -v "$(pwd)":/data sushikim/hwp2docx:latest input.hwp output.docx
+
 ```
 
 ### Native Linux (Ubuntu/Debian)
